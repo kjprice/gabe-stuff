@@ -11,8 +11,13 @@ sleep 1
 echo But then there was a shark
 sleep 1
 
-echo The shark eats the girl
-sleep 1
+echo Does the shark eat the girl? y/n
+read does_shark_eats_girl
+
+if [ $does_shark_eats_girl = 'y' ]; then
+  echo The shark eats the girl
+  sleep 1
+fi 
 
 echo They lived happily ever after
 sleep 1
