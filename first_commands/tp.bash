@@ -1,0 +1,1 @@
+echo teleporting $1 to $2
