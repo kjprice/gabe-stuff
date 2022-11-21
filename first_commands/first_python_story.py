@@ -10,8 +10,10 @@ time.sleep(1)
 print('But then there was a shark')
 time.sleep(1)
 
-# Does the shark eat the girl? y/n
-# The shark eats the girl
+does_shark_eats_girl = input('Does the shark eat the girl? y/n: ')
+if does_shark_eats_girl == 'y':
+  print('The shark eats the girl')
+  time.sleep(1)
 
 # They lived happily ever after
 print('They lived happily ever after')
