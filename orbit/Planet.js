@@ -1,3 +1,6 @@
+// const FORCE = 6.674;
+const FORCE = 0.25;
+
 class Planet {
   constructor(mass, x, y, xSpeed, ySpeed, color) {
     this.mass = mass;
@@ -7,7 +10,7 @@ class Planet {
   }
   calculateForce(planet) {
     const distance = dist(this.position.x, this.position.y, planet.position.x, planet.position.y);
-    const force = 6.674 * this.mass * planet.mass / distance ** 2;
+    const force = FORCE * this.mass * planet.mass / distance ** 2;
     this.speed.add(force * (planet.position.x - this.position.x) / distance / this.mass, force * (planet.position.y - this.position.y) / distance / this.mass);
   }
   applyForce() {
